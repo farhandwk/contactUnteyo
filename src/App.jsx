@@ -252,7 +252,7 @@ export default function App() {
         <div className="min-h-screen w-full bg-black flex flex-col items-center justify-center font-[helvetica]">
             <Header/>
             <div className="text-center mb-4 text-white pt-36 md:mb-8">
-                <h1 className="text-2xl font-bold lg:text-4xl">Programs</h1>
+                <h1 className="text-2xl font-bold lg:text-4xl">Contact</h1>
             </div>
             <InteractiveGridLayout onOpenModal={setActiveModalId} />
             <Footer/>
