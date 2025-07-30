@@ -23,23 +23,23 @@ export default function DropdownNavDesktop({ label, items, leftContent, align = 
 
       {/* Dropdown */}
       <div
-        className={`transition-opacity duration-300 ease-in-out origin-top
+        className={`transition-opacity duration-300 ease-in-out origin-top 
           ${isHovered ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"} 
-          absolute mt-2 ${alignmentClasses[align]} bg-white text-black shadow-xl rounded-lg 
+          absolute mt-2 ${alignmentClasses[align]} bg-black/50 text-white shadow-xl rounded-xl border-gray-100 border-2
           w-[400px] flex z-[999]`}
       >
         {/* Left content */}
-        <div className="w-1/2 p-4 border-r border-gray-300 flex flex-col items-center justify-center">
+        <div className="w-1/2 p-0 border-r border-gray-300 flex flex-col items-center justify-center">
           {leftContent}
         </div>
 
         {/* Right content */}
-        <div className="w-1/2 p-4 flex flex-col justify-center gap-2">
+        <div className="w-1/2 px-2 flex flex-col justify-center gap-2">
           {items.map((item) => (
             <a
               key={item.id}
               href={item.link}
-              className="hover:bg-gray-100 rounded px-3 py-2 text-sm font-medium"
+              className="hover:bg-gray-100 hover:text-black rounded px-3 py-2 text-sm font-medium"
             >
               {item.title}
             </a>

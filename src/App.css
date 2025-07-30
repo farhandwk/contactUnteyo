@@ -2,3 +2,8 @@
     font-family: helvetica;
     src: url('./assets//font/helvetica-light-587ebe5a59211.ttf');
 }
+
+.scrolled {
+    background-color: #000000b3;
+    backdrop-filter: blur(10px);
+}

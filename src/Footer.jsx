@@ -19,9 +19,10 @@ function Footer({ scrollToSection }) {
     {
       title: "Company",
       items: [
-        { name: "About Us", link: "/#/AboutUs" },
-        { name: "Program", link: "/#/Program" },
-        { name: "Contact Us", link: "/#/ContactUs" },
+        { name: "About Us", link: "/newUnteyo/about/" },
+        { name: "Program", link: "/newUnteyo/program/" },
+        { name: "Careers", link: "/newUnteyo/careers/" },
+        { name: "Contact Us", link: "/newUnteyo/contact/" },
       ],
     },
   ];
@@ -53,7 +54,7 @@ function Footer({ scrollToSection }) {
   ];
 
   return (
-    <footer id="connect" className="relative bg-gradient-to-br from-[#000] to-[#16213e] text-white w-full">
+    <footer id="connect" className="relative w-full bg-gradient-to-br from-[#000] to-[#16213e] text-white">
       <div
       className="absolute h-[25%] top-0 left-0 right-0 bg-gradient-to-b from-[#000] to-transparent pointer-events-none"
       aria-hidden="true"
@@ -79,32 +80,21 @@ function Footer({ scrollToSection }) {
               <h4 className="text-lg font-bold mb-4">{section.title}</h4>
               <ul className="space-y-2">
                 {section.items.map((item, itemIndex) => (
-                  <li key={itemIndex}>
-                    {item.link.startsWith("/#") ? (
-                      <a
-                        href={item.link}
-                        className="text-sm text-gray-300 hover:text-white transition-colors"
-                      >
-                        {item.name}
-                      </a>
-                    ) : (
-                      <span
-                        className="text-sm text-gray-300 hover:text-white transition-colors cursor-pointer"
-                        onClick={() => scrollToSection(item.link)}
-                      >
-                        {item.name}
-                      </span>
-                    )}
-                  </li>
-                ))}
-              </ul>
-              {/* Garis pembatas hanya tampil di mobile */}
-    
-            </div>
-          ))}
+                <li key={itemIndex}>
+                  {/* PERUBAHAN: Hanya tag <a> yang digunakan */}
+                  <a
+                    href={item.link}
+                    className="text-sm text-gray-300 hover:text-white transition-colors"
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+                    </ul>
+                    {/* Garis pembatas hanya tampil di mobile */}
           
-
-
+                  </div>
+                ))}
           {/* Social Media */}
           <div className="text-center md:text-left">
             <h4 className="text-lg font-bold mb-4">Connect</h4>
