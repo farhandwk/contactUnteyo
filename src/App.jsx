@@ -7,11 +7,10 @@ import Footer from "./Footer"
 import "./App.css"
 
 // Di lingkungan lokal Anda, Anda bisa menggunakan impor ini:
-import bg1 from "./assets/bg1.jpg"
-import bg2 from "./assets/bg2.jpg"
+import bg1 from "./assets/bg1.png"
+import bg2 from "./assets/bg2.png"
 import bg3 from "./assets/bg3.jpg"
-import bgWhite from "./assets/DummbyBGwhite.jpg"
-import bgBlack from "./assets/DummyBGblack.png"
+
 
 import instagram from "./assets/instagram-icon.png"
 import email from "./assets/email-icon.png"
@@ -54,12 +53,12 @@ const Modal = ({ activeModalId, onClose }) => {
                 return {
                     title: "Dive Into Our Programs",
                     content: (
-                        <section className="space-y-4 text-white flex flex-row items-center gap-4 text-justify pb-12">
+                        <section className="text-white flex flex-col items-center justify-between gap-4 text-justify pb-12 w-full md:flex-row md:gap-12">
                             {contact.map((item) => (
-                                <div key={item.id} className='flex flex-col items-center w-1/2'>
-                                    <img src={item.img} className='w-36'></img>
-                                    <span>{item.text}</span>
-                                    <a href={item.link}>{item.title}</a>
+                                <div key={item.id} className='flex flex-col items-center w-full'>
+                                    <div className='min-h-[100px] mb-4'><img src={item.img} className=''></img></div>
+                                    <span className='mb-2'>{item.text}</span>
+                                    <a href={item.link} target='blank' className='font-semibold border-2 py-1 px-6 rounded-full bg-black hover:bg-white hover:text-black duration-500'>{item.title}</a>
                                 </div>
                             ))}
                         </section>
@@ -91,14 +90,14 @@ const Modal = ({ activeModalId, onClose }) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-6 pt-36"
+                className="fixed inset-0 bg-black/30 flex items-center justify-center z-50 p-6 pt-36"
                 onClick={onClose}
             >
                 <motion.div
                     initial={{ scale: 0.9, y: 20 }}
                     animate={{ scale: 1, y: 0 }}
                     exit={{ scale: 0.9, y: 20 }}
-                    className="bg-gray-900 rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto p-8 relative flex flex-col items-center md:max-w-4xl"
+                    className="bg-black/90 rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto p-8 relative flex flex-col items-center md:max-w-4xl"
                     onClick={(e) => e.stopPropagation()}
                 >
                     <button onClick={onClose} className="absolute top-4 right-4 text-gray-500 hover:text-white transition-colors text-2xl font-bold">&times;</button>
