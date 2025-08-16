@@ -19,10 +19,10 @@ function Footer({ scrollToSection }) {
     {
       title: "Company",
       items: [
-        { name: "About Us", link: "/newUnteyo/about/" },
-        { name: "Program", link: "/newUnteyo/program/" },
-        { name: "Careers", link: "/newUnteyo/careers/" },
-        { name: "Contact Us", link: "/newUnteyo/contact/" },
+        { name: "About Us", link: "/about/" },
+        { name: "Program", link: "/program/" },
+        { name: "Careers", link: "/careers/" },
+        { name: "Contact Us", link: "/contact/" },
       ],
     },
   ];

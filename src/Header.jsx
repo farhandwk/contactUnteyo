@@ -13,10 +13,10 @@ import MobileNav from "./MobileNav";
 
 
 const companyItems = [
-  { id: 1, title: "About Us", link: "/newUnteyo/about/" },
-  { id: 2, title: "Our Program", link: "/newUnteyo/program/" },
-  { id: 3, title: "Careers", link: "/newUnteyo/careers/" },
-  { id: 4, title: "Contact Us", link: "/newUnteyo/contact/" },
+  { id: 1, title: "About Us", link: "/about/" },
+  { id: 2, title: "Our Program", link: "/program/" },
+  { id: 3, title: "Careers", link: "/careers/" },
+  { id: 4, title: "Contact Us", link: "/contact/" },
 ];
 
 const eventItems = [
@@ -27,8 +27,8 @@ const eventItems = [
 ];
 
 const postItems = [
-  { id: 1, title: "Creative Media", link: "/newUnteyo/creativeMedia/" },
-  { id: 2, title: "Student News", link: "/newUnteyo/StudentNews/" },
+  { id: 1, title: "Creative Media", link: "/creativeMedia/" },
+  { id: 2, title: "Student News", link: "/StudentNews/" },
 ];
 
 const socialMedia = [
@@ -73,7 +73,7 @@ export default function Header() {
             <img src={hamburger} ></img>
           </button>
           <div className="flex flex-row items-center justify-center">
-            <a href="/newUnteyo/">
+            <a href="/">
               <img src={logo} className="w-[74px] h-[80px] " alt="Logo"/>
             </a>
           
