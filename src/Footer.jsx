@@ -121,17 +121,9 @@ function Footer({ scrollToSection }) {
 
         {/* Copyright */}
         <div className="text-center pt-6 border-t border-gray-700">
-          <p className="text-xs text-gray-500 mb-2">
+          <p className="text-xs text-gray-500">
             © 2025 Unteyo Journey. All Rights Reserved.
           </p>
-          <div className="flex flex-wrap justify-center space-x-2 md:space-x-4 text-xs">
-            <a
-              href="/#/AboutDeveloper"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              About Developer
-            </a>
-          </div>
         </div>
       </div>
     </footer>
