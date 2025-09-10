@@ -33,7 +33,7 @@ function Footer({ scrollToSection }) {
       items : [
         {name: "All Events", link: "https://event.unteyojourney.com/index.php"},
         {name: "News", link: ""},
-        {name: "Creative Media", link: ""},
+        {name: "Creative Media", link: "/creativeMedia/"},
         {name: "Events: Sharing Session", link: "https://event.unteyojourney.com/index.php?kategori=Sharing+Session"},
         {name: "Events: Social Education", link: "https://event.unteyojourney.com/index.php?kategori=Social+Education"},
         {name: "Events: Movements", link: "https://event.unteyojourney.com/index.php?kategori=Movement"},
