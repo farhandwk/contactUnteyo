@@ -12,10 +12,10 @@ const MobileNav = ({ isOpen, setIsOpen }) => {
   ];
 
   const eventItems = [
-    { id: 1, title: "Social Education", link: "#" },
-    { id: 2, title: "Sharing Session", link: "#" },
-    { id: 3, title: "Movement", link: "#" },
-    { id: 4, title: "All Events", link: "#" },
+    { id: 1, title: "Social Education", link: "https://event.unteyojourney.com/index.php?kategori=Social+Education" },
+    { id: 2, title: "Sharing Session", link: "https://event.unteyojourney.com/index.php?kategori=Sharing+Session" },
+    { id: 3, title: "Movement", link: "https://event.unteyojourney.com/index.php?kategori=Movement" },
+    { id: 4, title: "All Events", link: "https://event.unteyojourney.com/index.php" },
   ];
 
   const postItems = [

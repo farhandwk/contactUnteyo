@@ -46,10 +46,10 @@ function Footer({ scrollToSection }) {
     {
       title: "User Guide & Policies",
       items: [
-        { name: "Privacy Policy", link: "/#/privacy" },
-        { name: "Terms and Condition", link: "/#/terms" },
-        { name: "Cookie Policy", link: "/#/cookies" },
-        { name: "Recruitment Privacy", link: "/#/recruitment" },
+        { name: "Privacy Policy", link: "/privacy/" },
+        { name: "Terms and Condition", link: "/terms/" },
+        { name: "Cookie Policy", link: "/cookies/" },
+        { name: "Recruitment Privacy", link: "/recruitment/" },
       ],
     },
   ];
