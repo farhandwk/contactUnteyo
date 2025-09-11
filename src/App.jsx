@@ -16,6 +16,7 @@ import instagram from "./assets/instagram-icon.png"
 import email from "./assets/email-icon.png"
 
 import uch from "./assets/uch-room.png"
+import office from "./assets/office.png"
 
 const assistYou = [
     {id: 1, title: "Partnerships & In-depth Inquiries", text: "For inquiries regarding partnerships & collaboration , media & press , or to provide comprehensive suggestions & feedback, please reach out to us using the email address listed below. Our team will review your message and respond accordingly."},
@@ -70,10 +71,10 @@ const Modal = ({ activeModalId, onClose }) => {
                     content: (
                         <section className="space-y-4 text-white flex flex-col items-center gap-4 text-justify pb-12 md:flex-row">
                             <div className='flex flex-col items-center gap-2'>
-                                <h4 className='text-lg font-semibold'>UTY CREATIVE HUB</h4>
-                                <span className='text-md'>Jl. Siliwangi Jl. Jombor Lor, Mlati Krajan, Sendangadi, Kec. Mlati, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55284</span>
+                                <h4 className='text-lg font-semibold'>Hubung's Group Office</h4>
+                                <span className='text-md'>Jl. Ngawen, Kranggahan II, Trihanggo, Kec. Gamping, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55291</span>
                             </div>
-                            <img src={uch} className='md:w-1/2'></img>
+                            <img src={office} className='md:w-1/2'></img>
                         </section>
                     )
                 };
@@ -180,8 +181,6 @@ function InteractiveGridLayout({ onOpenModal }) {
         return `${mobileHeight} ${desktopWidth} md:h-128`;
     };
     
-    // Di komputer Anda, ganti URL ini dengan variabel impor Anda (misal: bgWhite).
-    // Di komputer Anda, ganti URL ini dengan variabel impor Anda (misal: bgWhite).
     const boxesData = [
         { id: 1, imageUrl: bg1, title: "Our Assistant", description: "How we can assist you" },
         { id: 2, imageUrl: bg2, title: "Contact Information", description: "Our contact information for imquires"  },
